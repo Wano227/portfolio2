@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ================= NAVIGATION ================= -->
+  <header>
+    <nav>
+      <div class="logo">PASCAL OPARA.</div>
+      <div class="hamburger" id="hamburger">☰</div>
+      <ul id="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#works">Works</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ================= HERO ================= -->
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h1>My name is <span>Pascal Opara</span></h1>
+      <p>I’m a <span class="animated-words"></span></p>
+    </div>
+    <div class="hero-image">
+      <img src="images/myphoto.jpg" alt="My Picture">
+    </div>
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+  <section id="about" class="about">
+    <div class="about-img">
+      <img src="images/myphoto2.jpg" alt="About Me">
+    </div>
+    <div class="about-text">
+      <h2>Hello</h2>
+      <p>
+        Hi, I’m <strong>Pascal Opara</strong> — A student of the Pan Atlantic University. I'm a passionate creative who loves bringing ideas to life through design and technology.  
+        From <em>UI/UX design</em> to <em>photography, videography</em>, and <em>app development</em>, I enjoy building things that tell stories and solve problems.  
+      </p>
+      <p>
+        When I’m not working on projects, I’m learning new tools, exploring fresh ideas, and pushing myself to grow.  
+        My goal is simple: create work that’s clean, meaningful, and impactful.
+      </p>
+    </div>
+  </section>
+
+  <!-- ================= WORKS ================= -->
+  <section id="works" class="works">
+    <h2>My Work <span>Awesome Projects</span></h2>
+    <div class="filter">
+      <button class="active" data-filter="all">All</button>
+      <button data-filter="ui">UI Design</button>
+      <button data-filter="videography">Videography</button>
+      <button data-filter="apps">App Development</button>
+      <button data-filter="photography">Photography</button>
+    </div>
+
+    <div class="gallery">
+      <!-- UI DESIGN -->
+      <div class="item ui" data-title="Suftan" data-desc="A mock up of an ordering app i am creating for my father's company" data-img="images/ui1.jpg">
+        <img src="images/ui1.jpg" alt="UI Dashboard">
+      </div>
+      
+
+      <!-- VIDEOGRAPHY -->
+      <div class="item videography" 
+           data-title="Art Club" 
+           data-desc="A cinematic video made for the art club to bring freshers to the club." 
+           data-video="videos/video1.mp4">
+        <img src="images/video1-thumbnail.jpg" alt="Art Club">
+      </div>
+
+      <div class="item videography" 
+           data-title="James Hope college" 
+           data-desc="A video i made and edited for the Pan Atlantic University to present to the James Hope College students." 
+           data-video="videos/video2.mp4">
+        <img src="images/video2-thumbnail.jpg" alt="Music Video Thumbnail">
+      </div>
+
+      <div class="item videography" 
+           data-title="Eco-Alchemy" 
+           data-desc="A short video i made of the living green club memebers talking about their Eco-Alchemy project" 
+           data-video="videos/video3.mp4">
+        <img src="images/video3-thumbnail.jpg" alt="Documentary Thumbnail">
+      </div>
+
+      
+
+      <!-- APP DEVELOPMENT -->
+      <div class="item apps" data-title="Suftan" data-desc="A the look of the app so far as its currently in development. It should be ready for launch before the end of the year" data-img="images/app1.jpg">
+        <img src="images/app1.jpg" alt="Mobile App">
+      </div>
+      
+
+      <!-- PHOTOGRAPHY -->
+      <div class="item photography"   data-img="images/photo1.jpg">
+        <img src="images/photo1.jpg" alt="Mountain Shot">
+      </div>
+      <div class="item photography"  data-img="images/photo2.jpg">
+        <img src="images/photo2.jpg" alt="City View">
+      </div>
+      <div class="item photography"  data-img="images/photo3.jpg">
+        <img src="images/photo3.jpg" alt="City View">
+      </div>
+      <div class="item photography"  data-img="images/photo4.jpg">
+        <img src="images/photo4.jpg" alt="City View">
+      </div>
+      <div class="item photography"  data-img="images/photo5.jpg">
+        <img src="images/photo5.jpg" alt="City View">
+      </div>
+      <div class="item photography"  data-img="images/photo6.jpg">
+        <img src="images/photo6.jpg" alt="City View">
+      </div>
+      <div class="item photography"  data-img="images/photo7.jpg">
+        <img src="images/photo7.jpg" alt="City View">
+      </div>
+      <div class="item photography"  data-img="images/photo8.jpg">
+        <img src="images/photo8.jpg" alt="City View">
+      </div>
+      <div class="item photography"  data-img="images/photo9.jpg">
+        <img src="images/photo9.jpg" alt="City View">
+      </div>
+      <div class="item photography"  data-img="images/photo10.jpg">
+        <img src="images/photo10.jpg" alt="City View">
+      </div>
+      <div class="item photography"  data-img="images/photo11.jpg">
+        <img src="images/photo11.jpg" alt="City View">
+      </div>
+      <div class="item photography"  data-img="images/photo12.jpg">
+        <img src="images/photo12.jpg" alt="City View">
+      </div>
+      <div class="item photography"  data-img="images/photo13.jpg">
+        <img src="images/photo13.jpg" alt="City View">
+      </div>
+    </div>
+
+    <button class="load-more">Load More</button>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>Phone: <a href="tel:08036100715">08036100715</a></p>
+    <p>Email: <a href="mailto:pascalpara243@gmail.com">pascalpara243@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/pascal-opara" target="_blank">Pascal Opara</a></p>
+  </section>
+
+  <!-- ================= MODAL POPUP ================= -->
+  <div id="modal" class="modal">
+    <span class="close">&times;</span>
+    <div class="modal-content">
+      <h2 id="modal-title"></h2>
+      <div id="modal-media"></div> <!-- img or video injected here -->
+      <p id="modal-desc"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
